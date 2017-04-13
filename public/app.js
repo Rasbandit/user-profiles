@@ -14,7 +14,8 @@ angular.module('userProfiles', ['ui.router'])
 		controller: 'profileCtrl',
 		resolve: {
 			userInfo: function( friendService ) {
-				/* FIX ME */
+				console.log('started');
+				return friendService.getFriends()
 			}
 		}
 	});
